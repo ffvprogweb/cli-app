@@ -1,0 +1,22 @@
+.menu-container { /* centraliza o menu */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+   }
+  
+  nav ul li {
+    margin-right: 10px; /* adiciona uma margem à direita de 10px */
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #0077b5; /* Cor azul */
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;/* Adiciona um sublinhado ao passar o mouse */
+  }
