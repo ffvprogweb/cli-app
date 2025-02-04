@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css"; // Importa o arquivo de estilos
-const Menu = () => {
+function Menu() {
   return (
     <div className="menu-container">
       <h3>Gerenciamento de Clientes</h3>
@@ -17,6 +17,6 @@ const Menu = () => {
       </nav>
     </div>
   );
-};
+}
 
 export default Menu;

@@ -1,4 +1,4 @@
-const ClienteCadastrar = async (cliente) => {
+async function ClienteCadastrar(cliente) {
   try {
     const response = await fetch("http://localhost:8081/api/v1/clientes", {
       method: "POST",
@@ -9,8 +9,8 @@ const ClienteCadastrar = async (cliente) => {
     });
 
     if (!response.ok) {
-      console.log("erro detectado no fetch =>", response);
-      throw new Error("dados inválidos ");
+      console.log("Erro detectado no fetch =>", response);
+      throw new Error("Dados inválidos");
     }
 
     const data = await response.json();
@@ -18,5 +18,6 @@ const ClienteCadastrar = async (cliente) => {
   } catch (error) {
     return { success: false, error: error.message };
   }
-};
+}
+
 export default ClienteCadastrar;

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./ClienteConsultaStyles.css"; // Importa o arquivo de estilos
 
-const ClienteConsultaView = ({ clientes }) => {
+function ClienteConsultaView({ clientes }) {
   return (
     <div className="cliente-view">
       <h5>Lista de Clientes</h5>
@@ -38,7 +38,7 @@ const ClienteConsultaView = ({ clientes }) => {
       )}
     </div>
   );
-};
+}
 
 ClienteConsultaView.propTypes = {
   clientes: PropTypes.arrayOf(

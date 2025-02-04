@@ -4,7 +4,7 @@ import ClienteCadastrarView from "./componentes/cadastrar_cliente/ClienteCadastr
 import ClienteConsultaView from "./componentes/consulta/ClienteConsultaView";
 import Menu from "./componentes/menu/Menu";
 
-const App = () => {
+function App() {
   const clientes = [
     // Adicione alguns dados de exemplo para testar
     {
@@ -31,6 +31,6 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;

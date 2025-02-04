@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import ClienteConsultaView from "./ClienteConsultaView";
 import "./ClienteStyles.css";
 
-const ClienteConsulta = ({ atualizarConsulta }) => {
+function ClienteConsulta({ atualizarConsulta }) {
   const [clientes, setClientes] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -44,7 +44,7 @@ const ClienteConsulta = ({ atualizarConsulta }) => {
       )}
     </div>
   );
-};
+}
 
 // Validar a prop
 ClienteConsulta.propTypes = {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ClienteCadastrarStyles.css";
 
-const ClienteCadastrarView = () => {
+function ClienteCadastrarView() {
   const [cpf, setCpf] = useState("");
   const [nome, setNome] = useState("");
   const [cep, setCep] = useState("");
@@ -59,6 +59,6 @@ const ClienteCadastrarView = () => {
       </form>
     </div>
   );
-};
+}
 
 export default ClienteCadastrarView;
