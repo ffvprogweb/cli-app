@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import ClienteConsultaView from "./ClienteConsultaView";
-import "./ClienteStyles.css";
+import "./ClienteConsultaStyles.css";
 
 function ClienteConsulta({ atualizarConsulta }) {
   const [clientes, setClientes] = useState(null);
